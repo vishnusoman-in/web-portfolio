@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Navigate, Routes, Route, Switch } from "react-router-dom";
 
-import Portfoliopage from "webpages/Portfolio";
+import Portfoliopage from "webpages/Portfolio/Portfoliopage.js";
 
 function App() {
   return (
