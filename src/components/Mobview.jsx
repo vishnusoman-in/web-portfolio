@@ -37,7 +37,7 @@ height="100%"
 />
 </Box>
 
-<Box  style={{position:"absolute", zIndex:"302",top:"30%", left:"30" backgroundColor:"red",transform:"rotate(-5deg)"}}>
+<Box  style={{position:"absolute", zIndex:"302",top:"30%", left:"30", backgroundColor:"red",transform:"rotate(-5deg)"}}>
 <Typography>What is it man</Typography>
 </Box>
 
