@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import {Box,Typography,useMediaQuery,Divider,LinearProgress,Button} from "@mui/material";
 
 
-import desk from 'assets/portfolio_desktop-clean.jpg'
+import desk from 'assets/portfolio_desktopwtext.jpg'
 
 import mob from 'assets/mob.jpg'
 
@@ -306,9 +306,9 @@ height="100%"
 
 {/* main tab displaying results */}
 
-<Box width="27.5%" height="16.8%" backgroundColor="rgb(255,255,255)" style={{position:"absolute", zIndex:"6",top:"46.5%", left:"48.4%"}}>
+<Box width="27.5%" height="16.8%"  style={{position:"absolute", zIndex:"6",top:"46.5%", left:"48.4%"}}>
 
-  {!gameQ && !chiperQ && !mdbQ && !htmlQ && !cssQ && !jsQ && !nodeQ && !expressQ && !reactQ && !reduxQ && !sqlQ && !gitQ && !bootstrapQ && !muiQ &&
+  { /*!gameQ && !chiperQ && !mdbQ && !htmlQ && !cssQ && !jsQ && !nodeQ && !expressQ && !reactQ && !reduxQ && !sqlQ && !gitQ && !bootstrapQ && !muiQ &&
   <>
   <Box src={chiper}
   width="100%"
@@ -326,7 +326,7 @@ height="100%"
   </Box>
 
   </>
-   }
+*/}
 
 
   {chiperQ &&

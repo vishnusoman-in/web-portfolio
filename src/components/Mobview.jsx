@@ -13,7 +13,7 @@ import mypic from "assets/mypic.png"
 import {KeyboardDoubleArrowDown} from '@mui/icons-material';
 
 import mob from 'assets/mob.jpg'
-import bg from 'assets/peakpx.jpg'
+//import bg from 'assets/peakpx.jpg'
 import Sidebar from 'components/Sidebar.jsx'
 
 import css from 'assets/css.png'
@@ -78,18 +78,8 @@ backgroundImage: `url(${mob})`, backgroundSize: "99.5%",
 </Box>
 </Box>
 
-<Box sx={{boxShadow:15,}} width="75vh" height="100vh" >
-<img src={mob}
-width="100%" 
-height="100%"
-/>
-</Box>
 
-{bar && 
-<Box width="auto" height="50%" style={{position:"absolute", zIndex:"310",top:"5%", left:"25%",}}>
-<Sidebar heigh="60vh" />
-</Box>
-}
+
 
 {/* chain of left apps */}
 <Box display="Grid"   marginTop="5%" style={{position:"absolute", zIndex:"303",top:"5%", left:"1%",}}>
@@ -158,7 +148,7 @@ height="95%"
 
 <Box display="Grid" marginTop="4%" style={{position:"absolute", zIndex:"305",top:"5%", left:"90vw",}}>
 
-<Box display="flex" justifyContent="center" width="6vw" height="5vh"  sx={{marginTop:"1vh",}} >
+<Box display="flex" justifyContent="center" width="6vw" height="4vh"  sx={{marginTop:"1vh",}} >
 <img src={git}
 onMouseEnter={() => {setgitQ(true); setlinea("here "); setlineb("here"); setlinec("here"); setlined("here");} }
 onMouseLeave={() => {setgitQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
@@ -167,7 +157,7 @@ height="95%"
 />
 </Box>
 
-<Box display="flex" justifyContent="center" width="5vw" height="5vh" sx={{marginTop:"9vh"}}>
+<Box display="flex" justifyContent="center" width="5vw" height="5vh" sx={{marginTop:"10vh"}}>
 <img src={html}
 onMouseEnter={() => {sethtmlQ(true); setlinea("here "); setlineb("here"); setlinec("here"); setlined("here");} }
 onMouseLeave={() => {sethtmlQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
@@ -214,9 +204,22 @@ height="95%"
 
 </Box>
 
+{bar && 
+<Box width="auto" height="50%" style={{position:"absolute", zIndex:"410",top:"5%", left:"22%",}}>
+<Sidebar heigh="60vh" />
+</Box>
+}
+
+<Box sx={{boxShadow:15,}} width="50vh" height="100vh" style={{position:"relative", zIndex:"200",}} >
+<img src={mob}
+width="100%" 
+height="100%"
+/>
+
+
 {/* own project box */}
 
-<Box display="Grid" sx={{border:1, borderRadius:"0.5rem"}} style={{position:"absolute", zIndex:"306",top:"8%", left:"30%",}} backgroundColor="#dfcfcf">
+<Box display="Grid" sx={{border:1, borderRadius:"0.5rem"}} style={{position:"absolute", zIndex:"202",top:"8%", left:"27%",}} backgroundColor="#dfcfcf">
 <Typography textAlign="center" color="white">Own Projects</Typography>
 <Box display="flex">
 <Typography marginRight="2rem" color="white">Ecommerce</Typography>
@@ -226,9 +229,8 @@ height="95%"
 
 {/* tablet show */}
 
-<Box display="Grid" width="215px" height="440px" backgroundColor="white" style={{position:"absolute", zIndex:"307",top:"22%", left:"23%",transform: "rotate(0deg)"}}>
-
-
+<Box display="Grid" width="58%" height="59%"  style={{position:"absolute", zIndex:"203",top:"23%", left:"24%",transform: "rotate(0deg)"}}>
+</Box>
 
 </Box>
 
