@@ -40,6 +40,9 @@ const Portfoliopage = () => {
 
    const isDesktop = useMediaQuery("(min-width: 1000px)");
    const navigate = useNavigate();
+   const isFirefox = typeof InstallTrigger !== 'undefined';
+   //const isIE = false || !!document.documentMode;
+   //const isEdge = !isIE && !!window.StyleMedia;
    // onClick={() => {navigate("/");}}
 
    //const line1 =" Hello there!"
@@ -90,10 +93,12 @@ const Portfoliopage = () => {
 
     
     return (
+<>
+      {(isDesktop) && 
        
-<Box width="100vw" height="100vh" display="flex" justifyContent="flex-start" >
+<Box width="100vw" height="100vh" display="flex" justifyContent="flex-start">
 
-  {isDesktop && <>
+
 
 <Box width="auto" height="auto" style={{position:"relative", zIndex:"2",}}>
 
@@ -103,7 +108,7 @@ height="99.5%" // 788px
 />
 
 {/*watch Time module*/}
-<Box width="3%" height="3%" style={{position:"absolute", zIndex:"3",top:"30.5%", left:"27.4%"}}>
+<Box width="3%" height="3%" style={{position:"absolute", zIndex:"3",top:"30.5%", left:"27.1%"}}>
  
  <Typography fontSize="1.5vh" color="greenyellow" >{time}</Typography>
  
@@ -111,7 +116,7 @@ height="99.5%" // 788px
 
 
 {/*smartphone module w=220 h=120 */}
-<Box id="sp" width="18%" height="14%" backgroundColor="rgb(255,255,255,0)" overflow="scroll" overflowX="hidden" style={{position:"absolute", zIndex:"4",top:"7%", left:"53%",cursor:"pointer"}}>
+<Box id={isFirefox  ? "ff" : "sp"} width="18%" height="14%" backgroundColor="rgb(255,255,255,0)" overflow={isFirefox  ? "hidden" : "scroll"} overflowX="hidden" style={{position:"absolute", zIndex:"4",top:"7%", left:"53%",cursor:"pointer"}}>
 
 <Box display="flex" justifyContent="flex-start"  marginTop="5%">
 
@@ -240,7 +245,7 @@ height="95%"
 {/*tablet-side module   //w=295  h=220*/}
 <Box width="21.5%" height="26.8%" backgroundColor="rgb(255,255,255)" style={{position:"absolute", zIndex:"5",top:"16%", left:"0%",cursor:"pointer"}}>
   <img src={chiper}
-  onMouseEnter={() => {setchiperQ(true); setline1("..................................................Own Project.................................................. "); 
+  onMouseEnter={() => {setchiperQ(true); setline1(".........Own Project......... "); 
                         setline2("Electronic ecommerce website with all features including user login,orders,cart,mobile-view,Admin upload Page,Payment...etc"); }}
   onMouseLeave={() => {setchiperQ(false); setline1(" "); setline2(" ");}}
 width="100%"
@@ -248,7 +253,7 @@ height="100%"
 
  />
   <img src={game}
-  onMouseEnter={() => {setgameQ(true); setline1("..................................................Own Project.................................................. "); 
+  onMouseEnter={() => {setgameQ(true); setline1(".........Own Project......... "); 
   setline2("2D multiplayer online game with chat room , player stats viewer, mobile view, login/register page, player database."); }}
 onMouseLeave={() => {setgameQ(false); setline1(" "); setline2(" ");}}
 width="100%"
@@ -861,19 +866,22 @@ style={{marginLeft:"5.5rem",}}
 
 </Box>
 
-<Sidebar/>
+<Sidebar heigh="98%" />
 
-</>}
+</Box>
+
+  }
 
 {!isDesktop && 
 
   <Mobview/>
 
-
 }
 
-</Box>
+</>
 
-)};
+)
+
+};
 
 export default Portfoliopage;

@@ -12,10 +12,13 @@ import mypic from "assets/mypic.png"
 
 import {KeyboardDoubleArrowDown} from '@mui/icons-material';
 
-const Sidebar = () => { 
+const Sidebar = ({heigh,}) => { 
 
    const isDesktop = useMediaQuery("(min-width: 1000px)");
    const navigate = useNavigate();
+   const isFirefox = typeof InstallTrigger !== 'undefined';
+   //const isIE = false || !!document.documentMode;
+   //const isEdge =  !!window.StyleMedia; //!isIE &&
    // onClick={() => {navigate("/");}}
 
    //Box 1 - width="200px" height="785px"
@@ -23,17 +26,17 @@ const Sidebar = () => {
 
    //<Box sx={{position:"absolute", zIndex:"12", backgroundColor:"rgb(100,250,100)",left:"100px", top:"700px", }}>
 //<KeyboardDoubleArrowDown></KeyboardDoubleArrowDown>
-//</Box>
-    
+//</Box> //98%
+    //75%
     return (
 
-        <Box width="200px" height="auto" overflow="scroll"   backgroundColor="#cfcfcf" sx={{ boxShadow:5,borderRadius:"0.8rem"}}  marginLeft="0.8rem" marginRight="0.8rem" style={{position:"relative", zIndex:"10",}}>
+        <Box display={isFirefox  ? "flex":""} justifyContent={isFirefox  ? "center":""} width={isFirefox && isDesktop  ? "800px":"200px"} height="auto" overflowX={isFirefox  ? "hidden":"scroll"} overflow="scroll"   backgroundColor="#cfcfcf" sx={{ boxShadow:5,borderRadius:"0.8rem"}}  marginLeft="0.8rem" marginRight="0.8rem" style={{position:"relative", zIndex:"10",}}>
 
-<Box width="75%" height="98%" backgroundColor="#cfcfcf" marginLeft="0.9rem" marginTop="1rem" borderRadius="0.5rem">
+<Box width={isFirefox ? "150px":"150px"} height={heigh} backgroundColor="#cfcfcf" marginLeft="0.9rem" marginTop="1rem" borderRadius="0.5rem">
 
-<Box  sx={{position:"absolute", zIndex:"11", backgroundColor:"rgb(100,250,100)", left:"120px", top:"90px", border:1, borderColor:"black" }} borderRadius="50%" width="12px" height="12px" >
+{ (!isFirefox) && <Box  sx={{position:"absolute", zIndex:"11", backgroundColor:"rgb(100,250,100)", left:"120px", top:"90px", border:1, borderColor:"black" }} borderRadius="50%" width="12px" height="12px" >
 
-</Box >
+</Box >}
 
 
 
