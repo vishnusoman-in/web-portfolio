@@ -26,13 +26,13 @@ import mui from 'assets/mui.png'
 import express from 'assets/express.png'
 import git from 'assets/git.png'
 import bootstrap from 'assets/bootstrap.png'
+import more from 'assets/more.jpg'
 
 
 import chiper from 'assets/chiper.png'
 import game from 'assets/game.png'
 import { motion } from "framer-motion";
 
-import {Circle} from '@mui/icons-material';
 
 import {ArrowRight} from '@mui/icons-material';
 
@@ -81,6 +81,7 @@ const Portfoliopage = () => {
    const[bootstrapQ, setbootstrapQ] = useState(false)
    const[chiperQ, setchiperQ] = useState(false)
    const[gameQ, setgameQ] = useState(false)
+   const[moreQ, setmoreQ] = useState(false)
 
    setInterval(() => {
     const d = new Date();
@@ -122,7 +123,7 @@ height="99.5%" // 788px
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%"}}>
 <img src={mangodb}
-onMouseEnter={() => {setmdbQ(true); setlinea("here "); setlineb("here"); setlinec("here"); setlined("here");} }
+onMouseEnter={() => {setmdbQ(true); setlinea("Experience on working with Mongodb Cloud manager and Atlas manager "); setlineb("Experience in integerating Mongodb with Node applications to update, insert, delete and retrieve data"); setlinec("Experience in developing managing and deploying Mongodb clusters"); setlined("worked on Mongodb concepts like schema design");} }
 onMouseLeave={() => {setmdbQ(false);setlinea(""); setlineb(""); setlinec("here"); setlined("here");} }
 width="95%"
 height="95%"
@@ -131,7 +132,7 @@ height="95%"
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
 <img src={node}
-onMouseEnter={() => {setnodeQ(true); setlinea("here "); setlineb("here"); setlinec("here"); setlined("here");} }
+onMouseEnter={() => {setnodeQ(true); setlinea("Experienced in Javascript coding on Node.js platform"); setlineb("Experience with JSON, JWT and bcrypt for authentication and security using Node.js"); setlinec("Have experience with using Node.js to interact with Mongodb "); setlined("proficient in building MERN stack apps");}}
 onMouseLeave={() => {setnodeQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
 height="95%"
@@ -140,7 +141,7 @@ height="95%"
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
 <img src={react}
-onMouseEnter={() => {setreactQ(true); setlinea("here "); setlineb("here"); setlinec("here"); setlined("here");} }
+onMouseEnter={() => {setreactQ(true); setlinea("Experienced in functional programming in React.js using Hooks "); setlineb("Familiar with 25+ react libraries and deep knownledge of major libraries"); setlinec("Experienced in react state management using Redux library and Context API"); setlined("Experienced in coding using React JSX");} }
 onMouseLeave={() => {setreactQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
 height="95%"
@@ -149,7 +150,7 @@ height="95%"
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
 <img src={express}
-onMouseEnter={() => {setexpressQ(true); setlinea("here "); setlineb("here"); setlinec("here"); setlined("here");} }
+onMouseEnter={() => {setexpressQ(true); setlinea("Experienced in implementing REST API using Express js"); setlineb(" Worked with various Express js middleware modules"); setlinec("have experience integerating Express js with Nosql like Mongodb"); setlined("Experience in deveoping Express server with complex routes");} }
 onMouseLeave={() => {setexpressQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
 height="95%"
@@ -158,7 +159,7 @@ height="95%"
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
 <img src={js}
-onMouseEnter={() => {setjsQ(true); setlinea("here "); setlineb("here"); setlinec("here"); setlined("here");} }
+onMouseEnter={() => {setjsQ(true); setlinea("Have experience using vanilla Javascript to build web applications including games, ecommerce store and API based web apps"); setlineb("Experienced in coding for Node and React using Javascript"); setlinec("Familiar with Vanilla Javascript core concepts and it's implementation"); setlined("");} }
 onMouseLeave={() => {setjsQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
 height="95%"
@@ -167,7 +168,7 @@ height="95%"
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
 <img src={redux}
-onMouseEnter={() => {setreduxQ(true); setlinea("here "); setlineb("here"); setlinec("here"); setlined("here");} }
+onMouseEnter={() => {setreduxQ(true); setlineb("Familiar with Redux toolkit and persist"); setlinea("Experience in developing state management workflows and implant them over the react Js responsive web application"); setlinec("familiar with redux Action,Reducer,Dispatch..etc"); setlined("Experience with Redux alternatives like Context API");} }
 onMouseLeave={() => {setreduxQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
 height="95%"
@@ -181,25 +182,17 @@ height="95%"
 
 <Box display="flex"  width="15%" height="30%" sx={{marginTop:"1%",}}>
 <img src={git}
-onMouseEnter={() => {setgitQ(true); setlinea("here "); setlineb("here"); setlinec("here"); setlined("here");} }
+onMouseEnter={() => {setgitQ(true); setlinea("Used GIT tools to keep track of all works and all changes in source code and deployed the application "); setlineb("Experience in workflows and merging..etc"); setlinec("Experience in deploying website using github repositories"); setlined("");} }
 onMouseLeave={() => {setgitQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
 height="95%"
 />
 </Box>
 
-<Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
-<img src={html}
-onMouseEnter={() => {sethtmlQ(true); setlinea("here "); setlineb("here"); setlinec("here"); setlined("here");} }
-onMouseLeave={() => {sethtmlQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
-width="95%"
-height="95%"
- />
-</Box>
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
 <img src={css}
-onMouseEnter={() => {setcssQ(true); setlinea("here "); setlineb("here"); setlinec("here"); setlined("here");} }
+onMouseEnter={() => {setcssQ(true); setlinea("Experience in using css along with html and Js for UI of web applications"); setlineb("Experience in using css frameworks like Material UI and Bootstrap"); setlinec(""); setlined("");} }
 onMouseLeave={() => {setcssQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
 height="95%"
@@ -208,7 +201,7 @@ height="95%"
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
 <img src={bootstrap}
-onMouseEnter={() => {setbootstrapQ(true); setlinea("here "); setlineb("here"); setlinec("here"); setlined("here");} }
+onMouseEnter={() => {setbootstrapQ(true); setlinea("Experience in implementing single page app UI using Bootstrap"); setlineb("Experience with Bootstrap design templates and Javascript plugins"); setlinec("Experience in building mobile friendly UI using Bootstrap"); setlined("");} }
 onMouseLeave={() => {setbootstrapQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
 height="95%"
@@ -217,7 +210,7 @@ height="95%"
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
 <img src={sql}
-onMouseEnter={() => {setsqlQ(true); setlinea("here "); setlineb("here"); setlinec("here"); setlined("here");} }
+onMouseEnter={() => {setsqlQ(true); setlinea("Experience in integerating Mysql database with Node Js "); setlineb("Experience in extracting, transforming and loading data from Mysql database"); setlinec("Experience in CRUD operations"); setlined("");} }
 onMouseLeave={() => {setsqlQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
 height="95%"
@@ -226,8 +219,17 @@ height="95%"
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
 <img src={mui}
-onMouseEnter={() => {setmuiQ(true); setlinea("here "); setlineb("here"); setlinec("here"); setlined("here");} }
+onMouseEnter={() => {setmuiQ(true); setlinea("Experience in implementing single page application using Material UI"); setlineb("Experience with mui themes, icons and components"); setlinec("Experience in using custom components in Mui to create unique designs"); setlined("Have experience building mobile friendly web apps using Mui");} }
 onMouseLeave={() => {setmuiQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
+width="95%"
+height="95%"
+ />
+</Box>
+
+<Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
+<img src={more}
+onMouseEnter={() => {setmoreQ(true); } }
+onMouseLeave={() => {setmoreQ(false);} }
 width="95%"
 height="95%"
  />
@@ -345,38 +347,38 @@ height="200%"
 
 {mdbQ &&
  <>
- <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center">
+ <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
 <img src={mangodb}
-width="50%"
-height="50%"
-style={{marginLeft:"5.5rem",}}
+width="30%"
+height="20%"
+style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
 />
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
-  <Typography style={{fontSize:"2vh"}}>
+  <ArrowRight style={{fontSize:"2vh"}} ></ArrowRight>
+  <Typography style={{fontSize:"1.5vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
-  <Typography style={{fontSize:"2vh"}}>
+  <ArrowRight style={{fontSize:"2vh"}} ></ArrowRight>
+  <Typography style={{fontSize:"1.5vh"}}>
     {lineb}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
-  <Typography style={{fontSize:"2vh"}}>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+  <Typography style={{fontSize:"1.5vh"}}>
     {linec}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
-  <Typography style={{fontSize:"2vh"}}>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+  <Typography style={{fontSize:"1.5vh"}}>
     {lined}
   </Typography>
   </Box>
@@ -386,43 +388,72 @@ style={{marginLeft:"5.5rem",}}
 </>
 }
 
-{htmlQ &&
+{moreQ &&
   <>
-  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center">
- <img src={html}
- width="50%"
- height="50%"
- style={{marginLeft:"5.5rem",}}
- />
+  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
+  <img src={more}
+width="20%"
+height="20%"
+style={{marginLeft:"40%",transform: "rotate(0.3deg)",}}
+/>
  
- <Box display="grid">
+ <Box display="Grid"  >
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
-     {linea}
+   <ArrowRight  style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
+     Postman
    </Typography>
    </Box>
    
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
-     {lineb}
+   <ArrowRight style={{fontSize:"2vh"}} ></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
+     Mysql
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
-     {linec}
+   <ArrowRight style={{fontSize:"2vh"}} ></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
+     Formik & Yup
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
-     {lined}
+   <ArrowRight style={{fontSize:"2vh"}} ></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
+     Figma & photoshop
    </Typography>
    </Box>
+
+   <Box display="flex">
+   <ArrowRight style={{fontSize:"2vh"}} ></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
+     JWT & bcrypt
+   </Typography>
+   </Box>
+
+   <Box display="flex">
+   <ArrowRight style={{fontSize:"2vh"}} ></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
+     multer, stripe & cloudinary
+   </Typography>
+   </Box>
+
+   <Box display="flex">
+   <ArrowRight style={{fontSize:"2vh"}} ></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
+     helmet & morgan
+   </Typography>
+   </Box>
+
+   <Box display="flex">
+   <ArrowRight style={{fontSize:"2vh"}} ></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
+     React libraries including (router,framer-motion,..etc)
+   </Typography>
+   </Box>
+
  </Box>
  
  </Box>
@@ -431,38 +462,38 @@ style={{marginLeft:"5.5rem",}}
 
 {cssQ &&
   <>
-  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center">
+  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
  <img src={css}
- width="50%"
- height="50%"
- style={{marginLeft:"5.5rem",}}
+ width="30%"
+ height="20%"
+ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
  />
  
  <Box display="grid">
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linea}
    </Typography>
    </Box>
    
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {lineb}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   
+   <Typography style={{fontSize:"1.5vh"}}>
      {linec}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   
+   <Typography style={{fontSize:"1.5vh"}}>
      {lined}
    </Typography>
    </Box>
@@ -474,38 +505,38 @@ style={{marginLeft:"5.5rem",}}
 
 {jsQ &&
   <>
-  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center">
+  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
  <img src={js}
- width="50%"
- height="50%"
- style={{marginLeft:"5.5rem",}}
+ width="30%"
+ height="20%"
+ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
  />
  
  <Box display="grid">
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linea}
    </Typography>
    </Box>
    
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {lineb}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linec}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   
+   <Typography style={{fontSize:"1.5vh"}}>
      {lined}
    </Typography>
    </Box>
@@ -517,38 +548,38 @@ style={{marginLeft:"5.5rem",}}
 
 {nodeQ &&
   <>
-  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center">
+  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
  <img src={node}
- width="50%"
- height="50%"
- style={{marginLeft:"5.5rem",}}
+ width="30%"
+ height="20%"
+ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
  />
  
  <Box display="grid">
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linea}
    </Typography>
    </Box>
    
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {lineb}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linec}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {lined}
    </Typography>
    </Box>
@@ -560,38 +591,38 @@ style={{marginLeft:"5.5rem",}}
 
 {expressQ &&
  <>
- <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center">
+ <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
 <img src={express}
-width="50%"
-height="50%"
-style={{marginLeft:"5.5rem",}}
+width="30%"
+height="20%"
+style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
 />
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
-  <Typography style={{fontSize:"2vh"}}>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+  <Typography style={{fontSize:"1.5vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
-  <Typography style={{fontSize:"2vh"}}>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+  <Typography style={{fontSize:"1.5vh"}}>
     {lineb}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
-  <Typography style={{fontSize:"2vh"}}>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+  <Typography style={{fontSize:"1.5vh"}}>
     {linec}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
-  <Typography style={{fontSize:"2vh"}}>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+  <Typography style={{fontSize:"1.5vh"}}>
     {lined}
   </Typography>
   </Box>
@@ -605,38 +636,38 @@ style={{marginLeft:"5.5rem",}}
 
 {reactQ &&
   <>
-  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center">
+  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
  <img src={react}
- width="50%"
- height="50%"
- style={{marginLeft:"5.5rem",}}
+ width="30%"
+ height="20%"
+ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
  />
  
  <Box display="grid">
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linea}
    </Typography>
    </Box>
    
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {lineb}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linec}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {lined}
    </Typography>
    </Box>
@@ -648,38 +679,38 @@ style={{marginLeft:"5.5rem",}}
 
 {reduxQ &&
  <>
- <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center">
+ <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
 <img src={redux}
-width="50%"
-height="50%"
-style={{marginLeft:"5.5rem",}}
+width="30%"
+height="20%"
+style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
 />
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
-  <Typography style={{fontSize:"2vh"}}>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+  <Typography style={{fontSize:"1.5vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
-  <Typography style={{fontSize:"2vh"}}>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+  <Typography style={{fontSize:"1.5vh"}}>
     {lineb}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
-  <Typography style={{fontSize:"2vh"}}>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+  <Typography style={{fontSize:"1.5vh"}}>
     {linec}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
-  <Typography style={{fontSize:"2vh"}}>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+  <Typography style={{fontSize:"1.5vh"}}>
     {lined}
   </Typography>
   </Box>
@@ -691,37 +722,37 @@ style={{marginLeft:"5.5rem",}}
 
 {sqlQ &&
   <>
-  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center">
+  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
  <img src={sql}
- width="50%"
- height="50%"
- style={{marginLeft:"5.5rem",}}
+ width="30%"
+ height="20%"
+ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
  />
  
  <Box display="grid">
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linea}
    </Typography>
    </Box>
    
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {lineb}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linec}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
+   
    <Typography style={{fontSize:"2vh"}}>
      {lined}
    </Typography>
@@ -734,38 +765,38 @@ style={{marginLeft:"5.5rem",}}
 
 {gitQ &&
   <>
-  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center">
+  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
  <img src={git}
- width="50%"
- height="50%"
- style={{marginLeft:"5.5rem",}}
+ width="30%"
+ height="20%"
+ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
  />
  
  <Box display="grid">
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linea}
    </Typography>
    </Box>
    
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {lineb}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linec}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   
+   <Typography style={{fontSize:"1.5vh"}}>
      {lined}
    </Typography>
    </Box>
@@ -777,38 +808,38 @@ style={{marginLeft:"5.5rem",}}
 
 {bootstrapQ &&
   <>
-  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center">
+  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
  <img src={bootstrap}
- width="50%"
- height="50%"
- style={{marginLeft:"5.5rem",}}
+ width="30%"
+ height="20%"
+ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
  />
  
  <Box display="grid">
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linea}
    </Typography>
    </Box>
    
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {lineb}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linec}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   
+   <Typography style={{fontSize:"1.5vh"}}>
      {lined}
    </Typography>
    </Box>
@@ -820,38 +851,38 @@ style={{marginLeft:"5.5rem",}}
 
 {muiQ &&
   <>
-  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center">
+  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
  <img src={mui}
- width="50%"
- height="50%"
- style={{marginLeft:"5.5rem",}}
+ width="30%"
+ height="20%"
+ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
  />
  
  <Box display="grid">
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linea}
    </Typography>
    </Box>
    
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {lineb}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {linec}
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
-   <Typography style={{fontSize:"2vh"}}>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
+   <Typography style={{fontSize:"1.5vh"}}>
      {lined}
    </Typography>
    </Box>
