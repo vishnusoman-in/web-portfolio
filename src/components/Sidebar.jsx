@@ -7,10 +7,10 @@ import {Box,Typography,useMediaQuery,Divider,LinearProgress,Button} from "@mui/m
 import {CheckCircleOutline} from '@mui/icons-material';
 
 //import desk from 'assets/portfolio_desktop.jpg'
-import mypic from "assets/mypic.png"
+import mypic from "assets/mypic.jpg"
 //import zIndex from "@mui/material/styles/zIndex";
 
-import {KeyboardDoubleArrowDown} from '@mui/icons-material';
+import {LinkedIn, Facebook, Instagram, Twitter, WhatsApp } from '@mui/icons-material';
 
 const Sidebar = ({heigh,}) => { 
 
@@ -42,17 +42,25 @@ const Sidebar = ({heigh,}) => {
 
  <Box width="100px" height="100px" marginTop="1rem" backgroundColor="whitesmoke"  sx={{ borderRadius:"50%",marginLeft:"1.5rem", }} >
  <img src={mypic}
- width="100px"
+ width="90px"
  height="100px"
  
-style={{border:"2px",borderRadius: "50%",borderColor:"white"}}
+style={{border:"2px",borderRadius: "50%",borderColor:"white", marginLeft:"0.325rem"}}
  />
 </Box>   
 
 
 
 <Typography color="black" variant="h6" fontFamily="sans-serif" textAlign="center">Vishnu Soman</Typography>
-<Typography color="black" fontSize="10px" fontFamily="sans-serif" textAlign="center">Full Stack Developer</Typography>
+<Typography color="black" fontSize="12px" fontFamily="sans-serif" textAlign="center">Full Stack Developer</Typography>
+
+
+
+
+<Box display="flex" justifyContent="center"  marginTop="0.5rem">
+        <LinkedIn onClick={() => {window.open("https://e-chiper-electronics.onrender.com", "_blank");}} style={{fontSize:"14px",marginRight:"1.5rem", cursor:"pointer"}}></LinkedIn>
+        <WhatsApp onClick={() => {window.open("https://e-chiper-electronics.onrender.com", "_blank");}} style={{fontSize:"14px", cursor:"pointer"}}></WhatsApp>
+</Box>
 
 <Divider color="black" sx={{marginTop:"0.5rem", marginBottom:"0.5rem", height:"1px"}}  ></Divider>
 
@@ -80,7 +88,7 @@ style={{border:"2px",borderRadius: "50%",borderColor:"white"}}
 <Typography>100%</Typography>
 </Box>
 <Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
-<Box width="100%" height="4px" backgroundColor="black">
+<Box width="100%" height="4px" backgroundColor="green">
 </Box>
 </Box>
 
@@ -89,7 +97,7 @@ style={{border:"2px",borderRadius: "50%",borderColor:"white"}}
 <Typography>90%</Typography>
 </Box>
 <Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
-<Box width="90%" height="4px" backgroundColor="black">
+<Box width="90%" height="4px" backgroundColor="green">
 </Box>
 </Box>
 
@@ -98,7 +106,7 @@ style={{border:"2px",borderRadius: "50%",borderColor:"white"}}
 <Typography>70%</Typography>
 </Box>
 <Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
-<Box width="70%" height="4px" backgroundColor="black">
+<Box width="70%" height="4px" backgroundColor="green">
 </Box>
 </Box>
 
@@ -107,38 +115,22 @@ style={{border:"2px",borderRadius: "50%",borderColor:"white"}}
 <Typography>50%</Typography>
 </Box>
 <Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
-<Box width="50%" height="4px" backgroundColor="black">
+<Box width="50%" height="4px" backgroundColor="green">
 </Box>
 </Box>
 
 <Divider color="black" sx={{marginTop:"1.5rem", marginBottom:"0.5rem", height:"1px"}}  ></Divider>
 
-<Typography fontSize="20px" sx={{marginTop:"0.5rem", marginBottom:"0.5rem"}} >Coding Skills</Typography>
+<Typography fontSize="20px" sx={{marginTop:"0.5rem", marginBottom:"0.5rem"}} >Programming</Typography>
 
-<Box display="flex" justifyContent="space-between">
-<Typography>HTML</Typography>
-<Typography>80%</Typography>
-</Box>
-<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
-<Box width="80%" height="4px" backgroundColor="black">
-</Box>
-</Box>
 
-<Box display="flex" justifyContent="space-between">
-<Typography>CSS</Typography>
-<Typography>82%</Typography>
-</Box>
-<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
-<Box width="82%" height="4px" backgroundColor="black">
-</Box>
-</Box>
 
 <Box display="flex" justifyContent="space-between">
 <Typography>JS</Typography>
 <Typography>75%</Typography>
 </Box>
 <Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
-<Box width="75%" height="4px" backgroundColor="black">
+<Box width="75%" height="4px" backgroundColor="green">
 </Box>
 </Box>
 
@@ -147,7 +139,7 @@ style={{border:"2px",borderRadius: "50%",borderColor:"white"}}
 <Typography>74%</Typography>
 </Box>
 <Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
-<Box width="74%" height="4px" backgroundColor="black">
+<Box width="74%" height="4px" backgroundColor="green">
 </Box>
 </Box>
 
@@ -156,17 +148,162 @@ style={{border:"2px",borderRadius: "50%",borderColor:"white"}}
 <Typography>50%</Typography>
 </Box>
 <Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
-<Box width="50%" height="4px" backgroundColor="black">
+<Box width="50%" height="4px" backgroundColor="green">
 </Box>
 </Box>
 
-<Divider color="black" sx={{marginTop:"1.5rem", marginBottom:"1rem", height:"1px"}}  ></Divider>
+<Divider color="black" sx={{marginTop:"1.5rem", marginBottom:"0.5rem", height:"1px"}}  ></Divider>
 
-<Button sx={{color:"white", backgroundColor:"black", width:"150px", height:"20px", }}>more skills</Button>
+<Typography fontSize="20px" sx={{marginTop:"0.5rem", marginBottom:"0.5rem"}} >Development</Typography>
 
-<Divider color="black" sx={{marginTop:"1rem", marginBottom:"0.5rem", height:"1px"}}  ></Divider>
+<Box display="flex" justifyContent="space-between">
+<Typography>HTML</Typography>
+<Typography>80%</Typography>
+</Box>
+<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
+<Box width="80%" height="4px" backgroundColor="green">
+</Box>
+</Box>
+
+<Box display="flex" justifyContent="space-between">
+<Typography>CSS</Typography>
+<Typography>82%</Typography>
+</Box>
+<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
+<Box width="82%" height="4px" backgroundColor="green">
+</Box>
+</Box>
+
+<Box display="flex" justifyContent="space-between">
+<Typography>JSX</Typography>
+<Typography>80%</Typography>
+</Box>
+<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
+<Box width="80%" height="4px" backgroundColor="green">
+</Box>
+</Box>
+
+<Box display="flex" justifyContent="space-between">
+<Typography>React</Typography>
+<Typography>70%</Typography>
+</Box>
+<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
+<Box width="70%" height="4px" backgroundColor="green">
+</Box>
+</Box>
+
+<Box display="flex" justifyContent="space-between">
+<Typography>Express</Typography>
+<Typography>70%</Typography>
+</Box>
+<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
+<Box width="70%" height="4px" backgroundColor="green">
+</Box>
+</Box>
+
+<Box display="flex" justifyContent="space-between">
+<Typography>Node</Typography>
+<Typography>70%</Typography>
+</Box>
+<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
+<Box width="70%" height="4px" backgroundColor="green">
+</Box>
+</Box>
+
+<Divider color="black" sx={{marginTop:"1.5rem", marginBottom:"0.5rem", height:"1px"}}  ></Divider>
+
+<Typography fontSize="20px" sx={{marginTop:"0.5rem", marginBottom:"0.5rem"}} >UI Design</Typography>
+
+<Box display="flex" justifyContent="space-between">
+<Typography>Mui & Bootstrap</Typography>
+<Typography>70%</Typography>
+</Box>
+<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
+<Box width="70%" height="4px" backgroundColor="green">
+</Box>
+</Box>
+
+<Box display="flex" justifyContent="space-between">
+<Typography>Figma </Typography>
+<Typography>65%</Typography>
+</Box>
+<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
+<Box width="65%" height="4px" backgroundColor="green">
+</Box>
+</Box>
+
+<Box display="flex" justifyContent="space-between">
+<Typography>Photoshop </Typography>
+<Typography>65%</Typography>
+</Box>
+<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
+<Box width="65%" height="4px" backgroundColor="green">
+</Box>
+</Box>
+
+<Divider color="black" sx={{marginTop:"1.5rem", marginBottom:"0.5rem", height:"1px"}}  ></Divider>
+
+<Typography fontSize="20px" sx={{marginTop:"0.5rem", marginBottom:"0.5rem"}} >State Manage</Typography>
+
+<Box display="flex" justifyContent="space-between">
+<Typography>Redux</Typography>
+<Typography>70%</Typography>
+</Box>
+<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
+<Box width="70%" height="4px" backgroundColor="green">
+</Box>
+</Box>
+
+<Box display="flex" justifyContent="space-between">
+<Typography>Context API</Typography>
+<Typography>75%</Typography>
+</Box>
+<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
+<Box width="75%" height="4px" backgroundColor="green">
+</Box>
+</Box>
+
+<Divider color="black" sx={{marginTop:"1.5rem", marginBottom:"0.5rem", height:"1px"}}  ></Divider>
+
+<Typography fontSize="20px" sx={{marginTop:"0.5rem", marginBottom:"0.5rem"}} >Database </Typography>
+
+<Box display="flex" justifyContent="space-between">
+<Typography>Mysql</Typography>
+<Typography>60%</Typography>
+</Box>
+<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
+<Box width="60%" height="4px" backgroundColor="green">
+</Box>
+</Box>
+
+<Box display="flex" justifyContent="space-between">
+<Typography>Mongodb</Typography>
+<Typography>75%</Typography>
+</Box>
+<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
+<Box width="75%" height="4px" backgroundColor="green">
+</Box>
+</Box>
+
+<Divider color="black" sx={{marginTop:"1.5rem", marginBottom:"0.5rem", height:"1px"}}  ></Divider>
+
+<Typography fontSize="20px" sx={{marginTop:"0.5rem", marginBottom:"0.5rem"}} >Version Control </Typography>
+
+<Box display="flex" justifyContent="space-between">
+<Typography>GIT</Typography>
+<Typography>70%</Typography>
+</Box>
+<Box width="100%" height="4px" sx={{border:1, borderColor:"white", borderRadius:"0.5rem"}}>
+<Box width="70%" height="4px" backgroundColor="green">
+</Box>
+</Box>
+
+
+<Divider color="black" sx={{marginTop:"1rem", marginBottom:"1rem", height:"1px"}}  ></Divider>
 
 <Button sx={{color:"white", backgroundColor:"black", width:"150px", height:"20px"}}>Download CV</Button>
+
+<Divider color="black" sx={{marginTop:"1rem", marginBottom:"0.5rem", height:"1px"}}  ></Divider>
 
 </Box>
 

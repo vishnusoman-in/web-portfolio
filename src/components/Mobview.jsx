@@ -7,7 +7,7 @@ import {Box,Typography,useMediaQuery,Divider,LinearProgress,Button} from "@mui/m
 //import {Menu} from '@mui/icons-material';
 
 //import desk from 'assets/portfolio_desktop.jpg'
-import mypic from "assets/mypic.png"
+//import mypic from "assets/mypic.png"
 //import zIndex from "@mui/material/styles/zIndex";
 
 import {KeyboardDoubleArrowDown} from '@mui/icons-material';
@@ -290,56 +290,56 @@ style={{ marginLeft:"35%",transform: "rotate(0.3deg)",}}
  
  <Box display="Grid"  >
    <Box display="flex">
-   <ArrowRight></ArrowRight>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
    <Typography style={{fontSize:"2vh"}}>
      Postman
    </Typography>
    </Box>
    
    <Box display="flex">
-   <ArrowRight></ArrowRight>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
    <Typography style={{fontSize:"2vh"}}>
-     Mysql
+     Python,jsx,Typescript
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
    <Typography style={{fontSize:"2vh"}}>
-     Formik & Yup
+     Formik , Yup & socket.i.o
    </Typography>
    </Box>
  
    <Box display="flex">
-   <ArrowRight></ArrowRight>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
    <Typography style={{fontSize:"2vh"}}>
      Figma & photoshop
    </Typography>
    </Box>
 
    <Box display="flex">
-   <ArrowRight></ArrowRight>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
    <Typography style={{fontSize:"2vh"}}>
      JWT & bcrypt
    </Typography>
    </Box>
 
    <Box display="flex">
-   <ArrowRight></ArrowRight>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
    <Typography style={{fontSize:"2vh"}}>
      multer, stripe & cloudinary
    </Typography>
    </Box>
 
    <Box display="flex">
-   <ArrowRight></ArrowRight>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
    <Typography style={{fontSize:"2vh"}}>
      helmet & morgan
    </Typography>
    </Box>
 
    <Box display="flex">
-   <ArrowRight></ArrowRight>
+   <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
    <Typography style={{fontSize:"2vh"}}>
      React libraries including (router,framer-motion,..etc)
    </Typography>
@@ -350,6 +350,9 @@ style={{ marginLeft:"35%",transform: "rotate(0.3deg)",}}
  </Box>
  </>
 }
+
+
+{/* alert("NOTE: Using free backend hosting, there may be 20s initial loading delay"); */}
 
 {projectQ &&
   <>
@@ -363,14 +366,14 @@ style={{ marginLeft:"35%",transform: "rotate(0.3deg)",}}
   <img src={chiper}
 width="90%"
 height="35%"
-onClick={() => {}}
+onClick={() => {window.open("https://e-chiper-electronics.onrender.com", "_blank"); alert("NOTE: 'chiper electronics' demo website using free backend hosting, there may be 20s initial loading delay - Vishnu");}}
 style={{marginLeft:"15%",}}
 />
 <Typography variant="h6" style={{fontSize:"1.5vh", marginTop:"1rem",textAlign:"center",marginLeft:"5%",transform: "rotate(-0.5deg)"}} > online multiplayer Gaming - GAMEnCHAT</Typography>
 <img src={game}
 width="90%"
 height="35%"
-onClick={() => {}}
+onClick={() => {window.open("https://e-gamenchat-room.onrender.com", "_blank"); alert("NOTE: 'gamenchat' demo website using free backend hosting, there may be 20s initial loading delay - Vishnu");}}
 style={{marginLeft:"15%",transform: "rotate(-0.5deg)"}}
 />
 
@@ -389,21 +392,21 @@ style={{transform:"rotate(0.8deg)" ,marginLeft:"35%", }}
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"1.8vh"}} ></ArrowRight>
   <Typography style={{fontSize:"1.8vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"1.8vh"}}></ArrowRight>
   <Typography style={{fontSize:"1.8vh"}}>
     {lineb}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"1.8vh"}}></ArrowRight>
   <Typography style={{fontSize:"1.8vh"}}>
     {linec}
   </Typography>
@@ -433,28 +436,28 @@ style={{marginLeft:"35%",transform:"rotate(0.8deg)"}}
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {lineb}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linec}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {lined}
   </Typography>
@@ -476,28 +479,28 @@ style={{marginLeft:"35%",transform:"rotate(0.8deg)"}}
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {lineb}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linec}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {lined}
   </Typography>
@@ -519,28 +522,28 @@ style={{marginLeft:"35%",transform:"rotate(0.8deg)"}}
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {lineb}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linec}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {lined}
   </Typography>
@@ -562,28 +565,28 @@ style={{marginLeft:"35%",transform:"rotate(0.3deg)"}}
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"1.6vh"}}></ArrowRight>
   <Typography style={{fontSize:"1.6vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"1.6vh"}}></ArrowRight>
   <Typography style={{fontSize:"1.6vh"}}>
     {lineb}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"1.6vh"}}></ArrowRight>
   <Typography style={{fontSize:"1.6vh"}}>
     {linec}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"1.6vh"}}></ArrowRight>
   <Typography style={{fontSize:"1.6vh"}}>
     {lined}
   </Typography>
@@ -606,21 +609,21 @@ style={{marginLeft:"35%",transform:"rotate(0.8deg)"}}
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {lineb}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linec}
   </Typography>
@@ -649,21 +652,21 @@ style={{marginLeft:"35%",transform:"rotate(0.8deg)"}}
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {lineb}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linec}
   </Typography>
@@ -692,14 +695,14 @@ style={{marginLeft:"35%",transform:"rotate(0.8deg)"}}
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {lineb}
   </Typography>
@@ -735,14 +738,14 @@ style={{marginLeft:"35%",transform:"rotate(0.8deg)"}}
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {lineb}
   </Typography>
@@ -778,21 +781,21 @@ style={{marginLeft:"35%",transform:"rotate(0.8deg)"}}
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {lineb}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linec}
   </Typography>
@@ -821,21 +824,21 @@ style={{marginLeft:"35%",transform:"rotate(0.8deg)"}}
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {lineb}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linec}
   </Typography>
@@ -864,28 +867,28 @@ style={{marginLeft:"35%",transform:"rotate(0.8deg)"}}
 
 <Box display="grid">
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linea}
   </Typography>
   </Box>
   
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {lineb}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {linec}
   </Typography>
   </Box>
 
   <Box display="flex">
-  <ArrowRight></ArrowRight>
+  <ArrowRight style={{fontSize:"2vh"}}></ArrowRight>
   <Typography style={{fontSize:"2vh"}}>
     {lined}
   </Typography>

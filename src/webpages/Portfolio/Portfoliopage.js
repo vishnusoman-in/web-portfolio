@@ -245,11 +245,15 @@ height="95%"
 </Box>
 
 {/*tablet-side module   //w=295  h=220*/}
+
+{/* alert("NOTE: Using free backend hosting, there will be 20s initial loading delay"); */}
+
 <Box width="21.5%" height="26.8%" backgroundColor="rgb(255,255,255)" style={{position:"absolute", zIndex:"5",top:"16%", left:"0%",cursor:"pointer"}}>
   <img src={chiper}
   onMouseEnter={() => {setchiperQ(true); setline1(".........Own Project......... "); 
                         setline2("Electronic ecommerce website with all features including user login,orders,cart,mobile-view,Admin upload Page,Payment...etc"); }}
   onMouseLeave={() => {setchiperQ(false); setline1(" "); setline2(" ");}}
+  onClick={() => {window.open("https://e-chiper-electronics.onrender.com", "_blank"); alert("NOTE: 'chiper electronics' demo website using free backend hosting, there may be 20s initial loading delay - Vishnu");}}
 width="100%"
 height="100%"
 
@@ -258,6 +262,7 @@ height="100%"
   onMouseEnter={() => {setgameQ(true); setline1(".........Own Project......... "); 
   setline2("2D multiplayer online game with chat room , player stats viewer, mobile view, login/register page, player database."); }}
 onMouseLeave={() => {setgameQ(false); setline1(" "); setline2(" ");}}
+onClick={() => {window.open("https://e-gamenchat-room.onrender.com", "_blank"); alert("NOTE: 'gamenchat' demo website using free backend hosting, there may be 20s initial loading delay - Vishnu");}}
 width="100%"
 height="100%"
  />
@@ -408,14 +413,14 @@ style={{marginLeft:"40%",transform: "rotate(0.3deg)",}}
    <Box display="flex">
    <ArrowRight style={{fontSize:"2vh"}} ></ArrowRight>
    <Typography style={{fontSize:"1.5vh"}}>
-     Mysql
+     Python,jsx,Typescript
    </Typography>
    </Box>
  
    <Box display="flex">
    <ArrowRight style={{fontSize:"2vh"}} ></ArrowRight>
    <Typography style={{fontSize:"1.5vh"}}>
-     Formik & Yup
+   Formik , Yup & socket.i.o
    </Typography>
    </Box>
  
