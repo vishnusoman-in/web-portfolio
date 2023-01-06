@@ -7,7 +7,7 @@ import {Box,Typography,useMediaQuery,Divider,LinearProgress,Button} from "@mui/m
 import {CheckCircleOutline} from '@mui/icons-material';
 
 //import desk from 'assets/portfolio_desktop.jpg'
-import mypic from "assets/mypic.jpg"
+//import mypic from "assets/mypic.jpg"
 //import zIndex from "@mui/material/styles/zIndex";
 
 import {LinkedIn, Facebook, Instagram, Twitter, WhatsApp } from '@mui/icons-material';
@@ -17,22 +17,12 @@ const Sidebar = ({heigh,}) => {
    const isDesktop = useMediaQuery("(min-width: 1000px)");
    const navigate = useNavigate();
    const isFirefox = typeof InstallTrigger !== 'undefined';
-   //const isIE = false || !!document.documentMode;
-   //const isEdge =  !!window.StyleMedia; //!isIE &&
-   // onClick={() => {navigate("/");}}
-
-   //Box 1 - width="200px" height="785px"
-   //Box 2 - width="150px" height="750px"
-
-   //<Box sx={{position:"absolute", zIndex:"12", backgroundColor:"rgb(100,250,100)",left:"100px", top:"700px", }}>
-//<KeyboardDoubleArrowDown></KeyboardDoubleArrowDown>
-//</Box> //98%
-    //75%
+  
     return (
 
-        <Box display={isFirefox  ? "flex":""} justifyContent={isFirefox  ? "center":""} width={isFirefox && isDesktop  ? "800px":"200px"} height="auto" overflowX={isFirefox  ? "hidden":"scroll"} overflow="scroll"   backgroundColor="#cfcfcf" sx={{ boxShadow:5,borderRadius:"0.8rem"}}  marginLeft="0.8rem" marginRight="0.8rem" style={{position:"relative", zIndex:"10",}}>
+        <Box display={isFirefox  ? "flex":""} justifyContent={isFirefox  ? "center":""} width={isFirefox && isDesktop  ? "800px": "200px"} height="auto" overflowX={isFirefox  ? "hidden":"scroll"} overflow="scroll"   backgroundColor="#cfcfcf" sx={{ boxShadow:5,borderRadius:"0.8rem"}}  marginLeft="0.8rem" marginRight="0.8rem" style={{position:"relative", zIndex:"10",}}>
 
-<Box width={isFirefox ? "150px":"150px"} height={heigh} backgroundColor="#cfcfcf" marginLeft="0.9rem" marginTop="1rem" borderRadius="0.5rem">
+<Box width={isFirefox ? "150px":"150px"} height={heigh} backgroundColor="#cfcfcf" marginLeft={isFirefox ? "0rem":"1rem"} marginTop="1rem" borderRadius="0.5rem">
 
 { (!isFirefox) && <Box  sx={{position:"absolute", zIndex:"11", backgroundColor:"rgb(100,250,100)", left:"120px", top:"90px", border:1, borderColor:"black" }} borderRadius="50%" width="12px" height="12px" >
 
@@ -41,7 +31,7 @@ const Sidebar = ({heigh,}) => {
 
 
  <Box width="100px" height="100px" marginTop="1rem" backgroundColor="whitesmoke"  sx={{ borderRadius:"50%",marginLeft:"1.5rem", }} >
- <img src={mypic}
+ <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984251/Porfolio/mypic_phomqo.jpg"
  width="90px"
  height="100px"
  
@@ -58,8 +48,8 @@ style={{border:"2px",borderRadius: "50%",borderColor:"white", marginLeft:"0.325r
 
 
 <Box display="flex" justifyContent="center"  marginTop="0.5rem">
-        <LinkedIn onClick={() => {window.open("https://e-chiper-electronics.onrender.com", "_blank");}} style={{fontSize:"14px",marginRight:"1.5rem", cursor:"pointer"}}></LinkedIn>
-        <WhatsApp onClick={() => {window.open("https://e-chiper-electronics.onrender.com", "_blank");}} style={{fontSize:"14px", cursor:"pointer"}}></WhatsApp>
+        <LinkedIn onClick={() => {window.open("https://linkedin.com/in/vishnu-soman-7b2090261", "_blank");}} style={{fontSize:"14px",marginRight:"1.5rem", cursor:"pointer"}}></LinkedIn>
+        <WhatsApp onClick={() => {window.open("https://wa.me/7012882774", "_blank");}} style={{fontSize:"14px", cursor:"pointer"}}></WhatsApp>
 </Box>
 
 <Divider color="black" sx={{marginTop:"0.5rem", marginBottom:"0.5rem", height:"1px"}}  ></Divider>
@@ -301,7 +291,7 @@ style={{border:"2px",borderRadius: "50%",borderColor:"white", marginLeft:"0.325r
 
 <Divider color="black" sx={{marginTop:"1rem", marginBottom:"1rem", height:"1px"}}  ></Divider>
 
-<Button sx={{color:"white", backgroundColor:"black", width:"150px", height:"20px"}}>Download CV</Button>
+<Button onClick={() => {window.open("https://drive.google.com/file/d/1nYKXP77OM9oruSkSC9XS_WiFtW9CDjfE/view?usp=share_link", "_blank");}} sx={{color:"white", backgroundColor:"black", width:"150px", height:"20px"}}>Download CV</Button>
 
 <Divider color="black" sx={{marginTop:"1rem", marginBottom:"0.5rem", height:"1px"}}  ></Divider>
 

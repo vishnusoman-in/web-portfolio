@@ -7,14 +7,14 @@ import { useNavigate } from "react-router-dom";
 import {Box,Typography,useMediaQuery,Divider,LinearProgress,Button} from "@mui/material";
 
 
-import desk from 'assets/portfolio_desktopwtext.jpg'
+//import desk from 'assets/portfolio_desktopwtext.jpg'
 
-import mob from 'assets/mob.jpg'
+//import mob from 'assets/mob.jpg'
 
 import Sidebar from 'components/Sidebar.jsx'
 import Mobview from 'components/Mobview.jsx'
 
-import css from 'assets/css.png'
+/*import css from 'assets/css.png'
 import html from 'assets/html.png'
 import js from 'assets/js.png'
 import node from 'assets/node.png'
@@ -30,7 +30,8 @@ import more from 'assets/more.jpg'
 
 
 import chiper from 'assets/chiper.png'
-import game from 'assets/game.png'
+import game from 'assets/game.png' */
+
 import { motion } from "framer-motion";
 
 
@@ -103,7 +104,7 @@ const Portfoliopage = () => {
 
 <Box width="auto" height="auto" style={{position:"relative", zIndex:"2",}}>
 
-<img src={desk}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984235/Porfolio/portfolio_desktopwtext_zn1cqe.jpg"
 width="99.5%" // auto
 height="99.5%" // 788px
 />
@@ -122,7 +123,7 @@ height="99.5%" // 788px
 <Box display="flex" justifyContent="flex-start"  marginTop="5%">
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%"}}>
-<img src={mangodb}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984257/Porfolio/mangodb_n3dc7r.png"
 onMouseEnter={() => {setmdbQ(true); setlinea("Experience on working with Mongodb Cloud manager and Atlas manager "); setlineb("Experience in integerating Mongodb with Node applications to update, insert, delete and retrieve data"); setlinec("Experience in developing managing and deploying Mongodb clusters"); setlined("worked on Mongodb concepts like schema design");} }
 onMouseLeave={() => {setmdbQ(false);setlinea(""); setlineb(""); setlinec("here"); setlined("here");} }
 width="95%"
@@ -131,7 +132,7 @@ height="95%"
 </Box>
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
-<img src={node}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984229/Porfolio/node_lucrkq.png"
 onMouseEnter={() => {setnodeQ(true); setlinea("Experienced in Javascript coding on Node.js platform"); setlineb("Experience with JSON, JWT and bcrypt for authentication and security using Node.js"); setlinec("Have experience with using Node.js to interact with Mongodb "); setlined("proficient in building MERN stack apps");}}
 onMouseLeave={() => {setnodeQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
@@ -140,7 +141,7 @@ height="95%"
 </Box>
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
-<img src={react}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984230/Porfolio/react_euww5p.png"
 onMouseEnter={() => {setreactQ(true); setlinea("Experienced in functional programming in React.js using Hooks "); setlineb("Familiar with 25+ react libraries and deep knownledge of major libraries"); setlinec("Experienced in react state management using Redux library and Context API"); setlined("Experienced in coding using React JSX");} }
 onMouseLeave={() => {setreactQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
@@ -149,7 +150,7 @@ height="95%"
 </Box>
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
-<img src={express}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984234/Porfolio/express_ehocms.png"
 onMouseEnter={() => {setexpressQ(true); setlinea("Experienced in implementing REST API using Express js"); setlineb(" Worked with various Express js middleware modules"); setlinec("have experience integerating Express js with Nosql like Mongodb"); setlined("Experience in deveoping Express server with complex routes");} }
 onMouseLeave={() => {setexpressQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
@@ -158,7 +159,7 @@ height="95%"
 </Box>
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
-<img src={js}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984237/Porfolio/js_enmosg.png"
 onMouseEnter={() => {setjsQ(true); setlinea("Have experience using vanilla Javascript to build web applications including games, ecommerce store and API based web apps"); setlineb("Experienced in coding for Node and React using Javascript"); setlinec("Familiar with Vanilla Javascript core concepts and it's implementation"); setlined("");} }
 onMouseLeave={() => {setjsQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
@@ -167,7 +168,7 @@ height="95%"
 </Box>
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
-<img src={redux}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984231/Porfolio/redux_yg2k6h.png"
 onMouseEnter={() => {setreduxQ(true); setlineb("Familiar with Redux toolkit and persist"); setlinea("Experience in developing state management workflows and implant them over the react Js responsive web application"); setlinec("familiar with redux Action,Reducer,Dispatch..etc"); setlined("Experience with Redux alternatives like Context API");} }
 onMouseLeave={() => {setreduxQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
@@ -181,7 +182,7 @@ height="95%"
 <Box display="flex" justifyContent="flex-start" marginTop="2%">
 
 <Box display="flex"  width="15%" height="30%" sx={{marginTop:"1%",}}>
-<img src={git}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984237/Porfolio/git_a28eip.png"
 onMouseEnter={() => {setgitQ(true); setlinea("Used GIT tools to keep track of all works and all changes in source code and deployed the application "); setlineb("Experience in workflows and merging..etc"); setlinec("Experience in deploying website using github repositories"); setlined("");} }
 onMouseLeave={() => {setgitQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
@@ -191,7 +192,7 @@ height="95%"
 
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
-<img src={css}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984234/Porfolio/css_vpzbsx.png"
 onMouseEnter={() => {setcssQ(true); setlinea("Experience in using css along with html and Js for UI of web applications"); setlineb("Experience in using css frameworks like Material UI and Bootstrap"); setlinec(""); setlined("");} }
 onMouseLeave={() => {setcssQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
@@ -200,7 +201,7 @@ height="95%"
 </Box>
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
-<img src={bootstrap}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984233/Porfolio/bootstrap_bdcfdu.png"
 onMouseEnter={() => {setbootstrapQ(true); setlinea("Experience in implementing single page app UI using Bootstrap"); setlineb("Experience with Bootstrap design templates and Javascript plugins"); setlinec("Experience in building mobile friendly UI using Bootstrap"); setlined("");} }
 onMouseLeave={() => {setbootstrapQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
@@ -209,7 +210,7 @@ height="95%"
 </Box>
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
-<img src={sql}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984232/Porfolio/sql_alz3ja.png"
 onMouseEnter={() => {setsqlQ(true); setlinea("Experience in integerating Mysql database with Node Js "); setlineb("Experience in extracting, transforming and loading data from Mysql database"); setlinec("Experience in CRUD operations"); setlined("");} }
 onMouseLeave={() => {setsqlQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
@@ -218,7 +219,7 @@ height="95%"
 </Box>
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
-<img src={mui}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984231/Porfolio/mui_zacvif.png"
 onMouseEnter={() => {setmuiQ(true); setlinea("Experience in implementing single page application using Material UI"); setlineb("Experience with mui themes, icons and components"); setlinec("Experience in using custom components in Mui to create unique designs"); setlined("Have experience building mobile friendly web apps using Mui");} }
 onMouseLeave={() => {setmuiQ(false);setlinea(""); setlineb(""); setlinec(""); setlined("");} }
 width="95%"
@@ -227,7 +228,7 @@ height="95%"
 </Box>
 
 <Box display="flex" justifyContent="center" width="15%" height="30%" sx={{marginTop:"1%", marginLeft:"1.5%"}}>
-<img src={more}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984241/Porfolio/more_wwhfhu.png"
 onMouseEnter={() => {setmoreQ(true); } }
 onMouseLeave={() => {setmoreQ(false);} }
 width="95%"
@@ -249,7 +250,7 @@ height="95%"
 {/* alert("NOTE: Using free backend hosting, there will be 20s initial loading delay"); */}
 
 <Box width="21.5%" height="26.8%" backgroundColor="rgb(255,255,255)" style={{position:"absolute", zIndex:"5",top:"16%", left:"0%",cursor:"pointer"}}>
-  <img src={chiper}
+  <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984282/Porfolio/chiper_lgalfw.png"
   onMouseEnter={() => {setchiperQ(true); setline1(".........Own Project......... "); 
                         setline2("Electronic ecommerce website with all features including user login,orders,cart,mobile-view,Admin upload Page,Payment...etc"); }}
   onMouseLeave={() => {setchiperQ(false); setline1(" "); setline2(" ");}}
@@ -258,7 +259,7 @@ width="100%"
 height="100%"
 
  />
-  <img src={game}
+  <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984260/Porfolio/game_gx1g6k.png"
   onMouseEnter={() => {setgameQ(true); setline1(".........Own Project......... "); 
   setline2("2D multiplayer online game with chat room , player stats viewer, mobile view, login/register page, player database."); }}
 onMouseLeave={() => {setgameQ(false); setline1(" "); setline2(" ");}}
@@ -315,36 +316,18 @@ height="100%"
 
 <Box width="27.5%" height="16.8%"  style={{position:"absolute", zIndex:"6",top:"46.5%", left:"48.4%"}}>
 
-  { /*!gameQ && !chiperQ && !mdbQ && !htmlQ && !cssQ && !jsQ && !nodeQ && !expressQ && !reactQ && !reduxQ && !sqlQ && !gitQ && !bootstrapQ && !muiQ &&
-  <>
-  <Box src={chiper}
-  width="100%"
-  height="100%"
-  backgroundColor="white"
-   >
-  <Typography fontSize="1vh" textAlign="center"> Vishnu Soman</Typography>
-   </Box>
 
-  <Box src={chiper}
-  width="100%"
-  height="100%"
-   >
-<Typography fontSize="1vh" textAlign="center">Full Stack Developer</Typography>
-  </Box>
-
-  </>
-*/}
 
 
   {chiperQ &&
-  <img src={chiper}
+  <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984282/Porfolio/chiper_lgalfw.png"
   width="100%"
   height="200%"
    />
 }
 
 {gameQ &&
-  <img src={game}
+  <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984260/Porfolio/game_gx1g6k.png"
 width="100%"
 height="200%"
  />
@@ -353,7 +336,7 @@ height="200%"
 {mdbQ &&
  <>
  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
-<img src={mangodb}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984257/Porfolio/mangodb_n3dc7r.png"
 width="30%"
 height="20%"
 style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
@@ -396,7 +379,7 @@ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
 {moreQ &&
   <>
   <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
-  <img src={more}
+  <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984241/Porfolio/more_wwhfhu.png"
 width="20%"
 height="20%"
 style={{marginLeft:"40%",transform: "rotate(0.3deg)",}}
@@ -468,7 +451,7 @@ style={{marginLeft:"40%",transform: "rotate(0.3deg)",}}
 {cssQ &&
   <>
   <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
- <img src={css}
+ <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984234/Porfolio/css_vpzbsx.png"
  width="30%"
  height="20%"
  style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
@@ -511,7 +494,7 @@ style={{marginLeft:"40%",transform: "rotate(0.3deg)",}}
 {jsQ &&
   <>
   <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
- <img src={js}
+ <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984237/Porfolio/js_enmosg.png"
  width="30%"
  height="20%"
  style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
@@ -554,7 +537,7 @@ style={{marginLeft:"40%",transform: "rotate(0.3deg)",}}
 {nodeQ &&
   <>
   <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
- <img src={node}
+ <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984229/Porfolio/node_lucrkq.png"
  width="30%"
  height="20%"
  style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
@@ -597,7 +580,7 @@ style={{marginLeft:"40%",transform: "rotate(0.3deg)",}}
 {expressQ &&
  <>
  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
-<img src={express}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984234/Porfolio/express_ehocms.png"
 width="30%"
 height="20%"
 style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
@@ -642,7 +625,7 @@ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
 {reactQ &&
   <>
   <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
- <img src={react}
+ <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984230/Porfolio/react_euww5p.png"
  width="30%"
  height="20%"
  style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
@@ -685,7 +668,7 @@ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
 {reduxQ &&
  <>
  <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
-<img src={redux}
+<img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984231/Porfolio/redux_yg2k6h.png"
 width="30%"
 height="20%"
 style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
@@ -728,7 +711,7 @@ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
 {sqlQ &&
   <>
   <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
- <img src={sql}
+ <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984232/Porfolio/sql_alz3ja.png"
  width="30%"
  height="20%"
  style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
@@ -771,7 +754,7 @@ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
 {gitQ &&
   <>
   <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
- <img src={git}
+ <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984237/Porfolio/git_a28eip.png"
  width="30%"
  height="20%"
  style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
@@ -814,7 +797,7 @@ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
 {bootstrapQ &&
   <>
   <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
- <img src={bootstrap}
+ <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984233/Porfolio/bootstrap_bdcfdu.png"
  width="30%"
  height="20%"
  style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
@@ -857,7 +840,7 @@ style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
 {muiQ &&
   <>
   <Box width="100%" height="200%" backgroundColor="#cfcfcf" alignItems="center" style={{transform: "rotate(-0.3deg)",}}>
- <img src={mui}
+ <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984231/Porfolio/mui_zacvif.png"
  width="30%"
  height="20%"
  style={{marginLeft:"35%",transform: "rotate(0.3deg)",}}
