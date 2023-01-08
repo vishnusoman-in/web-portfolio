@@ -68,6 +68,8 @@ const Mobview = () => {
    const[moreQ, setmoreQ] = useState(false)
    const[projectQ, setprojectQ] = useState(false)
 
+   
+
    return(
 
     
@@ -78,10 +80,13 @@ const Mobview = () => {
 {/*
 backgroundImage: `url(${mob})`, backgroundSize: "99.5%",
    */}
-<Box onClick={() => {setbar(bar ? false:true)}} width="100vw" height="5vh"  backgroundColor="#afcfcf" sx={{border:1, borderColor:"black", boxShadow:5,borderBottomRightRadius:"1rem", borderBottomLeftRadius:"1rem"}} style={{position:"absolute", zIndex:"301",}}>
+<Box  width="100vw" height="5vh"  backgroundColor="#aacfcf" sx={{border:1, borderColor:"black", boxShadow:5,borderBottomRightRadius:"1rem", borderBottomLeftRadius:"1rem"}} style={{position:"absolute", zIndex:"301",}}>
 
-<Box marginLeft="48vw" >
-<KeyboardDoubleArrowDown  />
+<Box onClick={() => {setbar(bar ? false:true)}}  marginTop="0.2rem" marginLeft="5vw" backgroundColor="black" sx={{border:1,borderRadius:"0.5rem",boxShadow:15,}} width="200px">
+<Typography textAlign="center"  color="white" > Know more about me</Typography>
+</Box>
+<Box>
+<Typography marginTop="90vh" marginLeft="20vw" fontSize="10px" color="whitesmoke" >Have a better desktop version, Please check it...</Typography>
 </Box>
 </Box>
 
@@ -359,7 +364,7 @@ style={{ marginLeft:"32.5%",transform: "rotate(0.3deg)",}}
   <>
 
   <Box width="50%" height="50%" backgroundColor="#cfcfcf" alignItems="center" style={{position:"absolute", zIndex:"203",top:"23%", left:"24%",transform: "rotate(-0.3deg)"}}>
-     <Box sx={{border:1, borderRadius:"0.5rem", backgroundColor:"black", boxShadow:5,marginLeft:"15%"}}>
+     <Box sx={{border:1, borderRadius:"0.5rem", backgroundColor:"black", boxShadow:5,marginLeft:"17%"}}>
     <Typography color="white" variant="h6" style={{fontSize:"2vh", marginBottom:"1rem",textAlign:"center"}} > Own projects</Typography>
     </Box>
     <Typography variant="h6" style={{fontSize:"1.5vh", marginTop:"1rem",textAlign:"center",marginLeft:"5%"}} > Ecommerce website - chiper electronics</Typography>
@@ -370,12 +375,12 @@ height="35%"
 onClick={() => {window.open("https://e-chiper-electronics.onrender.com", "_blank"); alert("NOTE: 'chiper electronics' demo website using free backend hosting, there may be 20s initial loading delay - Vishnu");}}
 style={{marginLeft:"15%",}}
 />
-<Typography variant="h6" style={{fontSize:"1.5vh", marginTop:"1rem",textAlign:"center",marginLeft:"5%",transform: "rotate(-0.5deg)"}} > online multiplayer Gaming - GAMEnCHAT</Typography>
+<Typography variant="h6" style={{fontSize:"1.5vh", marginTop:"1rem",textAlign:"center",marginLeft:"5%",transform: "rotate(-0.3deg)"}} > online multiplayer Gaming - GAMEnCHAT</Typography>
 <img src="https://res.cloudinary.com/dexpbdlyc/image/upload/v1672984260/Porfolio/game_gx1g6k.png"
 width="90%"
 height="35%"
 onClick={() => {window.open("https://e-gamenchat-room.onrender.com", "_blank"); alert("NOTE: 'gamenchat' demo website using free backend hosting, there may be 20s initial loading delay - Vishnu");}}
-style={{marginLeft:"15%",transform: "rotate(-0.5deg)"}}
+style={{marginLeft:"15%",transform: "rotate(-0.4deg)"}}
 />
 
 </Box>

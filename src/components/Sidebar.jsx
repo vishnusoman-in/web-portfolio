@@ -289,9 +289,10 @@ style={{border:"2px",borderRadius: "50%",borderColor:"white", marginLeft:"0.325r
 </Box>
 
 
+
 <Divider color="black" sx={{marginTop:"1rem", marginBottom:"1rem", height:"1px"}}  ></Divider>
 
-<Button onClick={() => {window.open("https://drive.google.com/file/d/1nYKXP77OM9oruSkSC9XS_WiFtW9CDjfE/view?usp=share_link", "_blank");}} sx={{color:"white", backgroundColor:"black", width:"150px", height:"20px"}}>Download CV</Button>
+<Button onClick={() => {window.open("https://drive.google.com/file/d/17Ge--1hVSOTyxCRRhs7W1ymvTWxXtYJ2/view?usp=share_link", "_blank");}} sx={{color:"white", backgroundColor:"black", width:"150px", height:"20px"}}>Download CV</Button>
 
 <Divider color="black" sx={{marginTop:"1rem", marginBottom:"0.5rem", height:"1px"}}  ></Divider>
 
